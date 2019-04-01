@@ -18,7 +18,7 @@ game_board= board.board()
 red_piece = pygame.image.load('smallred.png')
 yellow_piece = pygame.image.load('smallyellow.png')
 
-game_board.print_board()
+
 game_over = False
 turn = 0
 player2 = Ai.AI_player(2, 1, True)
@@ -97,7 +97,7 @@ while not game_over:
 					screen.blit(label, (40,10))
 					game_over = True
 
-				game_board.print_board()
+				
 				game_board.draw_board(screen)
 
 			turn += 1
@@ -106,7 +106,7 @@ while not game_over:
 		for event in pygame.event.get():
 			if event.type == pygame.QUIT:
 				sys.exit()
-		pygame.time.wait(9000)
+		pygame.time.wait(6000)
 
 			
 				
